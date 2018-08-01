@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>音乐播放界面</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--页面顶部信息-->
+    <div class="top">
+        <span class="top_left"><a href="#"> QQ音乐</a></span>
+        <div class="myPic"></div>
+        <span class="top_center"><a href="#"> 我可以很好</a></span>
+        <span class="top_right" id="top_right"><a href="#"> 设置</a></span>
+        <span class="top_exit" id="top_exit"><a href="#"> 退出</a></span>
+    </div>
+
+    <!--页面中部信息-->
+    <div class="center">
+        <div class="left">
+            <div class="recommend">推荐</div>
+            <div class="List">发现音乐</div>
+            <div class="List">私人FM</div>
+            <div class="List">MV</div>
+            <div class="List">朋友</div>
+
+
+            <div class="recommend">我的音乐</div>
+            <div class="List">本地音乐</div>
+            <div class="List">我喜欢的音乐</div>
+            <div class="List">我的收藏</div>
+            <div class="List">下载管理</div>
+            <div class="List">我的音乐云盘</div>
+
+            <div class="recommend">创建的歌单</div>
+            <div class="List">my love</div>
+            <div class="List">日推荐-1</div>
+            <div class="List">日推荐-2</div>
+            <div class="List">日常曲-1</div>
+            <div class="List">日常曲-2</div>
+            <div class="List">纯音乐</div>
+            <div class="List">古风曲</div>
+        </div>
+        <!--中部歌曲列表-->
+        <div class="table">
+
+            <!--对歌曲进行操作的列表-->
+            <a href="#"> <div class="collection">收藏</div></a>
+            <a href="#"> <div class="addTo"> 添加到</div></a>
+            <a href="#"> <div class="download"> 下载</div></a>
+            <a href="#"> <div class="delete"> 删除</div></a>
+            <a href="#"> <div class="clearList"> 清空列表</div></a>
+
+
+            <div class="openMusic">
+                <!--歌曲列表头-->
+                <div class="introduce">
+                    <input type="checkbox" class="chooseBox">
+                    <span class="music">歌曲</span>
+                    <span class="singer">歌手</span>
+                    <span class="time">时长</span>
+                </div>
+                <!--第一首歌-->
+                <div class="details" id="details">
+                    <input type="checkbox" class="chooseBox" />
+                    <div class="wave"></div>
+                    <span class="music">一直很安静</span>
+                    <div class="hidden" id="hidden">
+                        <div class="stop">||</div>
+                        <div class="circleAdd">+</div>
+                        <div class="share" id="share" >
+                            <div class="share_out" id="share_out"></div>
+                            <div class="share_in" id="share_in"></div>
+                        </div>
+                        <div class="clear" ></div>
+                    </div>
+                    <span class="singer">阿桑</span>
+                    <span class="time" id="time">04:45</span>
+                </div>
+
+                <!--第二首歌-->
+                <div class="details_other">
+                    <input type="checkbox" class="chooseBox" />
+                    <span class="music">Shape of you</span>
+                    <span class="singer">J.fla</span>
+                    <span class="time" >03:40</span>
+                </div>
+
+                <!--第三首歌-->
+                <div class="details_other">
+                    <input type="checkbox" class="chooseBox" />
+                    <span class="music">外婆的话</span>
+                    <span class="singer">不才</span>
+                    <span class="time" >04:26</span>
+                </div>
+
+                <!--第四首歌-->
+                <div class="details_other">
+                    <input type="checkbox" class="chooseBox" />
+                    <span class="music">舍得</span>
+                    <span class="singer">王呈章</span>
+                    <span class="time" >04:22</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--歌词区域-->
+        <div class="lyrics">
+            <div class="illustration"></div> <!--歌曲插图-->
+            <div class="music_lyrics"><!--歌词-->
+               <div class="first_line">空荡的街景</div>
+                <div class="second_line"> 想找个人放感情</div>
+                作这种决定<br>
+                是寂寞与我为邻<br>
+                我们的爱情<br>
+                像你路过的风景<br>
+                一直在进行<br>
+                脚步却从来不会为我而停<br>
+                <div class="on">给你的爱一直很安静</div>
+                来交换你偶尔给的关心<br>
+                明明是三个人的电影<br>
+                我却始终不能有姓名<br>
+               你说爱像云<br>
+                要自在飘浮才美丽<br>
+                <div class="lastOn_line">我终于相信</div>
+                <div class="last_line">分手的理由有时候很动听</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--页面底部-->
+    <div class="bottom">
+        <div class="toLeft"></div><!--左跳键-->
+        <div class="stop_on"><!--暂停键-->
+            <div class="first"></div>
+            <div class="second"></div>
+        </div>
+        <div class="toRight"></div><!--右跳键-->
+        <span class="musicName">一直很安静-阿桑</span>
+        <span class="musicLong"> 01：03/04:26</span>
+        <div class="progress_left"></div>
+        <div class="progress_center"></div>
+        <div class="progress_right"></div>
+        <div class="repeat">
+            <div class="repeatLeft"></div>
+            <div class="repeatRight"></div>
+        </div>
+        <div class="clickLike"></div>
+        <div class="clickDownLoad"></div>
+        <div class="soundStyle">
+            <div class="soundCircle" id="soundCircle">纯净</div>
+            <div class="soundOFF" id="soundOFF">OFF</div>
+        </div>
+        <div class="sound">
+            <div class="soundLeft"></div>
+            <div class="soundCenter"></div>
+            <div class="soundRight"></div>
+        </div>
+    </div>
+<script src="style.js"></script>
+</body>
+</html>
